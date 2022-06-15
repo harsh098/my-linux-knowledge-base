@@ -20,3 +20,9 @@ Some important process states include
   2. Sleep/Queued
   3. Zombie  
 
+### PID(Process ID) Types
+  1. PID - Unique Process Identification Number
+  2. PPID (Parent Process ID) - Process (Parent) that started this process. If the parent dies, the PPID will refer to an adoptive parent; on recent kernels, this is kthreadd which has PPID=2
+  3. TID (Thread ID) - Thread ID number. This is the same as the PID for single-threaded processes. For a multi-threaded process, each thread shares the same PID, but has a unique TID.
+ 
+ 
